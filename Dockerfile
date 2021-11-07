@@ -50,8 +50,8 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY . /app
 
 # start cloud-builder Terminal
-RUN npm install --force --prefix ./server
-CMD [ "npm", "run" , "start", "--prefix", "./server"]
+RUN npm install --force
+CMD [ "npm", "run" , "start"]
 #CMD ["bash","start.sh"]
 
 # start cloud-builder FronEnd
